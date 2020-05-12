@@ -59,7 +59,7 @@ public class monitor extends monitorUI {
             }
         }
 
-        serverSocket = new ServerSocket(Integer.parseInt(config.get("SERVER_PORT")), 0, InetAddress.getByName(io.getShellOutput("hostname -I").replace("\n","").replace(" ","")));
+        serverSocket = new ServerSocket(Integer.parseInt(config.get("SERVER_PORT")), 0, InetAddress.getByName("127.0.0.1"));
         io.pln("... Done!\n" +
                 "Listening for Clients on "+serverSocket.getInetAddress().getHostAddress());
 
