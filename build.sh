@@ -12,6 +12,8 @@ unzip -nq /home/sebastien/.m2/repository/eu/hansolo/Medusa/11.2/Medusa-11.2.jar 
 #uncomment for Linux:
 cp $PATH_TO_FX/{libprism*.so,libjavafx*.so,libglass*.so,libdecora_sse.so} out
 
+cp -r ./src/PCHWRMServer/assets out/PCHWRMServer/
+
 #uncomment for Mac:
 #cp $PATH_TO_FX/{libprism*.dylib,libjavafx*.dylib,libglass.dylib,libdecora_sse.dylib} out
 
